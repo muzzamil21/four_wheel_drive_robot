@@ -2,6 +2,7 @@
 Code for four wheel drive robot based on Arduino Mega 2560 and L298 motor driver, 
 Consult attached fritzing schematic for pin assignment/refernce. 
 Change the base speed and delays as per your requirement. 
+There is a chance that right or left may be swapped as per your connections
 Code and Schematic by: muzzamil21
 */
 
@@ -28,24 +29,24 @@ void setup() {
   // put your setup code here, to run once:
 Serial.begin(115200);
 
-robot_fwd(base_speed);
+robot_fwd(base_speed);    //moving forward the robot for 1 second
 delay(1000);
-robot_stop();
+robot_stop();             //stoppping the robot for 1 second
 delay(1000);
-robot_right(base_speed);
+robot_right(base_speed);    //turning the robot to right side
 delay(100);
-robot_stop();
+robot_stop();           //stoppping the robot for 1 second
 delay(1000);
-robot_bkd(base_speed);
+robot_bkd(base_speed);    //moving backward the robot for 1 second
 delay(1000);
-robot_stop();
+robot_stop();         //stoppping the robot for 1 second
 delay(1000);
-robot_left(base_speed);
+robot_left(base_speed);   //turning the robot to left side
 delay(100);
-robot_fwd(base_speed);
+robot_fwd(base_speed);    //moving forward the robot for 1 second
 delay(1000);
-robot_stop();
-
+robot_stop();           //stoppping the robot for 5 second
+delay(5000);
 }
 
 void loop() {

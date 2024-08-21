@@ -1,4 +1,6 @@
-
+/*
+Motor_Movement has all the functions for controlling the motor
+*/
                 /******DEFINING METHODS FOR MOTORS MOTION******/
 
                 /**BACKWARD LEFT MOTOR FORWARD MOTION METHOD**/
